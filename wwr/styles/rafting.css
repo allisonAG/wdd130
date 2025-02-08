@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
 }
-
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
@@ -120,7 +119,7 @@ nav a:hover {
     height: auto;
 }
 /*Gallery Section*/
-.gallery {
+.gallery, .employees {
     text-align: center;
     padding: 40px;
     background-color: var(--accent2-color);
@@ -138,6 +137,108 @@ nav a:hover {
 .gallery-item img {
     width: 150px;
     height: 100px;
+}
+/*Contact Page*/
+.contact-info {
+    text-align: center;
+    padding: 20px;
+}
+/*Form*/
+form {
+    width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: var(--accent2-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    
+}
+.form-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+legend {
+    color: navy;
+    padding: 0.5rem;
+    font-size: 1.3em;
+}
+label, input, button, select, textarea {
+    font-family: var(--body-font);
+}
+label {
+    text-align: left;
+}
+input[type="text"],
+input[type="email"] {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+button {
+    width: 200px;
+    margin: 1rem auto;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+button:hover {
+    background-color: var(--primary-color);
+}
+/*Get to know us*/
+.employees {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--accent2-color);
+}
+.employee-container {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+}
+.emp-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.emp-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/*Wrr contact info*/
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.contact-us {
+    max-width: 300px;
+}
+.map iframe{
+    width: 300px;
+    height: 250px;
 }
 /*Footer*/
 footer {
