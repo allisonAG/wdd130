@@ -20,6 +20,7 @@ p {
 }
 a {
     text-decoration: none;
+    font-family: var(--body-font); 
 }
 /*Hero section*/
 .hero {
@@ -229,9 +230,10 @@ button:hover {
 /*Wrr contact info*/
 .info {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 20px;
+    gap: 150px;
 }
 .contact-us {
     max-width: 300px;
@@ -241,6 +243,176 @@ button:hover {
     height: 250px;
     border: none;
 }
+
+/*Tips Page*/
+.trips {
+    text-align: center;
+    padding: 70px;
+    background-color: var(--accent2-color);
+}
+.trips-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.trip-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+}
+.trip-item figcaption {
+    width: 100%;
+    padding-top: 5px;
+}
+.trip-item img {
+    width: 250px;
+    height: 200px;
+}
+/*Table*/
+.trips-table {
+    text-align: center;
+    padding: 70px;
+}
+table {
+    width: 800px;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+/*Contact Section*/
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    gap: 150px;
+    background-color: var(--accent2-color);
+}
+.contact-section img {
+    width: 500px;
+    height: auto;
+}
+.call-to-action {
+    justify-content: center;
+}
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 15px;
+}
+.contact-button:hover {
+    background-color: var(--primary-color);
+}
+/*Home*/
+.hero-home {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    padding-top: 20px; 
+}
+
+.hero-home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.hero-home h1 {
+    position: relative; 
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    margin-top: 20px; 
+    color: #fff;
+}
+/*Grid Section*/
+.home-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 50px;
+}
+.home-item {
+    text-align: center;
+}
+
+.home-item img {
+    width: 100%; 
+    height: 300px;
+    border-radius: 10px; 
+}
+
+.home-item figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+/*Newsletter*/
+.newsletter {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.newsletter fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nl-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nl-item input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
 /*Footer*/
 footer {
     display: flex;
